@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DoDa</string>
+    <string name="restaurant_list_screen_name">Discover</string>
+    <string name="restaurant_details_screen_name">Restaurant details</string>
+
+    <string name="restaurant_name_label">Restaurant Name</string>
+    <string name="restaurant_phone_number_label">Phone Number</string>
+    <string name="restaurant_yelp_rating_label">Yelp Rating</string>
+
+    <string name="activity_image_transition">activityImageTransition</string>
+
+    <string name="error_could_not_load_data">"We could not load the most recent data."</string>
+</resources>

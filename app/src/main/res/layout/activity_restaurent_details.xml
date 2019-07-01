@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/root"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.RestaurantDetailsActivity">
+
+    <ProgressBar
+            android:id="@+id/progress_bar"
+            android:indeterminate="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/progress_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:theme="@style/IndefiniteProgressBar"/>
+
+    <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+                android:background="@android:color/darker_gray"
+                android:id="@+id/main_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/row_item_padding">
+            <TextView
+                    android:text="@string/restaurant_name_label"
+                    android:textSize="@dimen/label_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_item_padding"
+                    tools:text="label some name"/>
+
+            <TextView
+                    android:textSize="@dimen/value_text_size"
+                    android:id="@+id/restaurant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_item_text_spacing"
+                    tools:text="value abcd"/>
+
+            <TextView
+                    android:text="@string/restaurant_phone_number_label"
+                    android:textSize="@dimen/label_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_item_padding"/>
+
+            <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_item_text_spacing"
+                    tools:text="value abcd"/>
+
+            <TextView
+                    android:text="@string/restaurant_yelp_rating_label"
+                    android:textSize="@dimen/label_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_item_padding"/>
+
+            <TextView
+                    android:id="@+id/yelp_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_item_text_spacing"
+                    tools:text="value abcd"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
